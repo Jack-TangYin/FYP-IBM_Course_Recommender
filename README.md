@@ -1,4 +1,4 @@
-# IBM SkillsBuild Course Recommender
+# IBM Course Recommender - A personalized Learning Companion
 
 A web application that provides personalized course recommendations. The system includes gamification features such as XP-based leveling, badges, quests, and a leaderboard to motivate learners. Built with Python and Gradio, this project is tested with full unit, functional, and integration test coverage.
 
