@@ -23,13 +23,24 @@ A web application that provides personalized course recommendations. The system 
 ```bash
 git clone https://github.com/your-username/ibm-course-recommender.git
 cd ibm-course-recommender
+```
 
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
+### 2. Install Dependencies
+Make sure you have Python 3.8+ installed. Then run:
 ```bash
-git clone https://github.com/your-username/ibm-course-recommender.git
-cd ibm-course-recommender
+pip install -r requirements.txt
+```
+
+## 🖥️ Run the Application
+Note: Please locate to 'backend'.
+```bash
+python ibm_course_recommender.py
+```
+
+## 🧪 Run Tests and Coverage
+Note: Please locate to 'tests'.
+```bash
+python run_tests.py
+```
+This also generates an HTML coverage report (index.html) in the htmlcov/ directory.
+
