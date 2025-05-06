@@ -1,0 +1,102 @@
+/* Custom Styles */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-window .chatbot-body {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.chatbot-window .message {
+  margin-bottom: 15px;
+  
+}
+
+.chatbot-window .bot-message .flex-shrink-0 {
+  align-self: flex-start;
+}
+
+.chatbot-window .user-message .flex-shrink-0 {
+  align-self: flex-end;
+}
+
+.chatbot-window .user-message .flex-grow-1 {
+  background-color: #0530ad;
+  color: white;
+}
+
+.chatbot-window .bot-message .flex-grow-1 {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 576px) {
+  .chatbot-window {
+    width: 90%;
+    right: 5%;
+  }
+}
+
+
+.chatbot-icon img {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Maintain the aspect ratio */
+  object-fit: contain; /* Prevent distortion */
+ 
+}
+
+.chatbot-icon:hover {
+  transform: scale(1.1); /* Add hover animation */
+}
+
+/* Basic styling for the chatbot overlay */
+#chatbot-window {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  /* Responsive sizing */
+  width: 40vw; /* 80% of viewport width */
+  max-width: 500px; /* But never exceed 600px in width */
+  height: 92.7vh; /* 70% of viewport height */
+  max-height: 700px; /* But never exceed 700px in height */
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#chatbot-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: crimson;
+}
+#chatbot-iframe {
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* You can tweak or remove these as you like */
+.chatbot-icon {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  z-index: 9998;
+  transition: transform 0.3s;
+  padding: 8px;
+  border: 3px solid white;
+}
